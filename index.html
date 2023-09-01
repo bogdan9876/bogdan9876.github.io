@@ -6,17 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color:gray;">
 
-    <h1 class="h1" id="h1">Hello Slava</h1>
-    <button type="button" class="btn" onclick="doSomething()" style="font-size: 50px;">click</button>
+    <label>Enter first numer:</label><br>
+    <input type="number" id="myText1"><br>
 
-    <script>
-        function doSomething(){
-            document.getElementById("h1").style.color = "blue";
-        }
-    </script>
-    
+    <label>Enter second numer:</label><br>
+    <input type="number" id="myText2"><br>
+
+    <button type="button" id="myButton"> = </button>
+
+    <div class="sum"></div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
