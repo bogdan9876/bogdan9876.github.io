@@ -8,7 +8,15 @@
 </head>
 <body>
 
-    <h1>Hello Slava</h1>
+    <h1 class="h1" id="h1">Hello Slava</h1>
+    <button type="button" class="btn" onclick="doSomething()" style="font-size: 50px;">click</button>
+
+    <script>
+        function doSomething(){
+            document.getElementById("h1").style.color = "blue";
+        }
+    </script>
+    
 
 </body>
 </html>
