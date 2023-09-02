@@ -1,6 +1,5 @@
-document.getElementById("myButton").onclick = function() {
-
-    document.querySelector("#myButton").addEventListener("click", ()=> {
-        document.querySelector(".sum").innerHTML = +document.querySelector("#myText1").value + +document.querySelector("#myText2").value
-        })
-}
+document.getElementById("myButton").addEventListener("click", function() {
+    var input1 = parseInt(document.getElementById("myText1").value);
+    var input2 = parseInt(document.getElementById("myText2").value);
+    document.querySelector(".sum").innerHTML = input1 + input2;
+});
